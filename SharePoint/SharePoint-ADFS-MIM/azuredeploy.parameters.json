@@ -1,0 +1,36 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "templatePrefix": {
+      "value": "miggsp16mim"
+    },
+    "sharePointVersion": {
+      "value": "2016"
+    },
+    "vmDCPublicIPDnsName": {
+      "value": "miggsp16mim-dc"
+    },
+    "vmSQLPublicIPDnsName": {
+      "value": "miggsp16mim-sql"
+    },
+    "vmSPPublicIPDnsName": {
+      "value": "miggsp16mim-sp"
+    },
+	"vmMIMPublicIPDnsName": {
+      "value": "miggsp16mim-mim"
+    },
+    "dscDCTemplateURL": {
+      "value": "https://github.com/Yvand/AzureRM-Templates/raw/master/SharePoint/SharePoint-ADFS/dsc/ConfigureDCVM.zip"
+    },
+    "dscSQLTemplateURL": {
+      "value": "https://github.com/Yvand/AzureRM-Templates/raw/master/SharePoint/SharePoint-ADFS/dsc/ConfigureSQLVM.zip"
+    },
+    "dscSPTemplateURL": {
+      "value": "https://github.com/Yvand/AzureRM-Templates/raw/master/SharePoint/SharePoint-ADFS/dsc/ConfigureSPVM.zip"
+    },
+    "dscMIMTemplateURL": {
+      "value": "https://github.com/miguego/AzureRM-Templates/raw/master/SharePoint/SharePoint-ADFS/dsc/ConfigureMIMVM.zip"        
+    }
+  }
+}
